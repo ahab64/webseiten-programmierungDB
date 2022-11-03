@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musik</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <div class="header01">
+      <h1>Lieblingslieder</h1>
+      <p>von Merlin</p>
+    </div>
+    <div class="main col-md-12 container">
+      <div id="myBtnContainer" class="row header02 mb-5 mt-2 p-3">
+        <div class="col-md-3">
+          <p>Merlin Burbach</p>
+        </div>
+        <div class="col-md-3">
+          <p>02.11.2000</p>
+        </div>
+        <div class="col-md-1">
+          <button class="btn active" onclick="filterSelection('all')">
+            Show all
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button class="btn" onclick="filterSelection('Gym')">
+            Gym Musik
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button class="btn" onclick="filterSelection('Auto')">
+            Auto Musik
+          </button>
+        </div>
+        <div class="col-md-1">
+          <button class="btn" onclick="filterSelection('Party')">
+            Party Musik
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 filterDiv Gym">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/1YmF9PvLhIISIANoMLIYGq?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="col-lg-6 filterDiv Gym">
+          <p id="song1">ASAP Forever</p>
+          <p>
+            Gang! Gang! Gang!/ They talkin' down on my name, don't let 'em run
+            off with the name/ Man I just run with the gang, A$AP boys came with
+            the flame/ Gang! Gang! They talkin' down on the gang/ They wanna rep
+            with the name but this ain't no regular name
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 filterDiv Gym Auto">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/3yTzw55zepngadBkMpy2Jx?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="col-lg-6 filterDiv Gym Auto">
+          <p id="song2">Alles wird gut</p>
+          <p>
+            Hab keine Angst vor Dunkelheit, frag nicht, wohin wir gehn. Wir
+            stolpern einfach vorwärts durch ein weiteres Jahrzehnt.
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 filterDiv Auto">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/3UQAKY0SUEonxneROvv4jy?utm_source=generator&theme=0"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="col-lg-6 filterDiv Auto">
+          <p id="song3">Ready to Die</p>
+          <p>
+            As I grab the Glock, put it to your headpiece/ One in the chamber,
+            the safety is off release/ Straight at your dome, homes, I wanna see
+            cabbage/ Biggie Smalls the savage, doing your brain cells much
+            damage
+          </p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-6 filterDiv Party Gym">
+          <iframe
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/60PAzFNW3vAiAiVK6DRJfB?utm_source=generator"
+            width="100%"
+            height="352"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="col-lg-6 filterDiv Party Gym">
+          <p id="song4">Day 'N' Night</p>
+          <p>
+            Day and night/ I toss and turn, I keep stress in my mind, mind/ I
+            look for peace, but see, I don't attain/ What I need for keeps, this
+            silly game we play, play
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="sidenav">
+        <a href="#song1">Song1</a>
+        <a href="#song2">Song2</a>
+        <a href="#song3">Song3</a>
+        <a href="#song4">Song4</a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
